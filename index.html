@@ -80,8 +80,16 @@
             </a>
 
             <footer>
-                <p>© Stufe U des Kant-Gymnasiums in Boppard</p>
+                <a class="invisible" href="impressum.html">© Stufe U des Kant-Gymnasiums in Boppard</a>
             </footer>
+
+            <script src="static/zoom.js"></script>
+
+            <script>
+                mediumZoom('[zoomable]');
+
+                document.addEventListener('contextmenu', event => event.preventDefault());
+            </script>
         </div>
     </main>
 </body>

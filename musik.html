@@ -37,14 +37,40 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="column col-1">
-                <img src="">
-            </div>
+        <div class="container category-container">
+            <a class="category invisible" target="_blank" href="https://youtu.be/T_sc7MEqQ0k">
+                <div></div>
+                <img src="https://pij.ddns.net/stufeu/img/musik/klasse10a.jpg">
+                <h3>Musik Film</h3>
+                <h5>Klasse 10a</h5>
+                <i>5:48 min</i>
+            </a>
+            <a class="category invisible" target="_blank" href="https://youtu.be/Z6dj72pvs50">
+                <div></div>
+                <img src="https://pij.ddns.net/stufeu/img/musik/mordinvenedig.jpg">
+                <h3>Mord in Venedig</h3>
+                <h5></h5>
+                <i>3:26 min</i>
+            </a>
+            <a class="category invisible" target="_blank" href="https://youtu.be/7xx2uoa7eMM">
+                <div></div>
+                <img src="https://pij.ddns.net/stufeu/img/musik/stummfilmmusik.jpg">
+                <h3>Stummfilm Musik</h3>
+                <h5></h5>
+                <i>3:40 min</i>
+            </a>
 
             <footer>
-                <p>© Stufe U des Kant-Gymnasiums in Boppard</p>
+                <a class="invisible" href="impressum.html">© Stufe U des Kant-Gymnasiums in Boppard</a>
             </footer>
+
+            <script src="static/zoom.js"></script>
+
+            <script>
+                mediumZoom('[zoomable]');
+
+                document.addEventListener('contextmenu', event => event.preventDefault());
+            </script>
         </div>
     </main>
 </body>
