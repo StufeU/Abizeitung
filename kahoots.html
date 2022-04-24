@@ -78,15 +78,15 @@
                 <a class="invisible" href="impressum.html">© Stufe U des Kant-Gymnasiums in Boppard</a>
             </footer>
 
-            <script src="static/zoom.js"></script>
-
             <script>
-                mediumZoom('[zoomable]');
-
                 document.addEventListener('contextmenu', event => event.preventDefault());
             </script>
         </div>
     </main>
+    <div id="zoombg" class="medium-zoom-overlay" style="background: var(--back);">
+        <img id="zoomimg" src="" class="medium-zoom-image medium-zoom-image--opened">
+    </div>
+    <script src="static/zoom.js"></script>
 </body>
 
 </html>
