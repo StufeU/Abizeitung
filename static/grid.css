@@ -21,18 +21,6 @@ iframe {
     -webkit-transform: translate3d(0, 0, 0);
 }
 
-@media only screen and (max-width: 900px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 .grid [col="2"] {
     grid-column: span 2;
 }
@@ -55,4 +43,94 @@ iframe {
 
 .grid [row="4"] {
     grid-row: span 4;
+}
+
+.grid [col="max"] {
+    grid-column: span 4 !important;
+    height: 50vw;
+    max-height: 600px;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid [col="4"] {
+        grid-column: span 3 !important;
+    }
+    .grid [row="4"] {
+        grid-row: span 3 !important;
+    }
+    .grid [col3="1"] {
+        grid-column: span 1 !important;
+    }
+    .grid [col3="2"] {
+        grid-column: span 2 !important;
+    }
+    .grid [col3="3"] {
+        grid-column: span 3 !important;
+    }
+    .grid [col3="4"] {
+        grid-column: span 3 !important;
+    }
+    .grid [row3="1"] {
+        grid-row: span 1 !important;
+    }
+    .grid [row3="2"] {
+        grid-row: span 2 !important;
+    }
+    .grid [row3="3"] {
+        grid-row: span 3 !important;
+    }
+    .grid [row3="4"] {
+        grid-row: span 3 !important;
+    }
+    .grid [col="max"] {
+        grid-column: span 3 !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid [col="3"] {
+        grid-column: span 2 !important;
+    }
+    .grid [row="3"] {
+        grid-row: span 2 !important;
+    }
+    .grid [col="4"] {
+        grid-column: span 2 !important;
+    }
+    .grid [row="4"] {
+        grid-row: span 2 !important;
+    }
+    .grid [col2="1"] {
+        grid-column: span 1 !important;
+    }
+    .grid [col2="2"] {
+        grid-column: span 2 !important;
+    }
+    .grid [col2="3"] {
+        grid-column: span 3 !important;
+    }
+    .grid [col2="4"] {
+        grid-column: span 2 !important;
+    }
+    .grid [row2="1"] {
+        grid-row: span 1 !important;
+    }
+    .grid [row2="2"] {
+        grid-row: span 2 !important;
+    }
+    .grid [row2="3"] {
+        grid-row: span 2 !important;
+    }
+    .grid [row2="4"] {
+        grid-row: span 2 !important;
+    }
+    .grid [col="max"] {
+        grid-column: span 2 !important;
+    }
 }

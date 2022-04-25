@@ -115,6 +115,7 @@ main .container h3 {
 header h1 {
     display: inline-block;
     line-height: 40px;
+    white-space: nowrap;
 }
 
 footer {
@@ -143,6 +144,10 @@ video {
     .category-container {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.category-container.col2 {
+    grid-template-columns: repeat(2, 1fr) !important;
 }
 
 .category {
