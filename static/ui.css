@@ -1289,9 +1289,10 @@ main {
     left: 0;
     right: 0;
     width: 100%;
-    min-height: calc(100% - var(--header-height));
+    height: calc(100% - var(--header-height));
     margin-right: auto;
     margin-left: auto;
+    overflow-y: auto;
 }
 
 main>.container {
