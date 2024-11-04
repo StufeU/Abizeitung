@@ -127,8 +127,7 @@ video {
     max-width: 100%;
 }
 
-.category-container,
-.img-container {
+.category-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
